@@ -1,36 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="bg-gray-100 min-h-screen p-6">
+        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          {/* card begin */}
+          <div className="bg-white p-6 min-h-40 rounded-lg shadow hover:shadow-lg transition-shadow hover:border hover:bg-gray-200 hover:scale-105 duration-300 text-5xl flex justify-center items-center">
+            card 1
+          </div>
+          {/* card end */}
+          {/* card begin */}
+          <div className="bg-white p-6 min-h-40 rounded-lg shadow hover:shadow-lg transition-shadow hover:border hover:bg-gray-200 hover:scale-105 duration-300 text-5xl flex justify-center items-center">
+            card 2
+          </div>
+          {/* card end */}
+          {/* card begin */}
+          <div className="bg-white p-6 min-h-40 rounded-lg shadow hover:shadow-lg transition-shadow hover:border hover:bg-gray-200 hover:scale-105 duration-300 text-5xl flex justify-center items-center">
+            card 3
+          </div>
+          {/* card end */}
+          {/* card begin */}
+          <div className="bg-white p-6 min-h-40 rounded-lg shadow hover:shadow-lg transition-shadow hover:border hover:bg-gray-200 hover:scale-105 duration-300 text-5xl flex justify-center items-center">
+            card 4
+          </div>
+          {/* card end */}
+          {/* card begin */}
+          <div className="bg-white p-6 min-h-40 rounded-lg shadow hover:shadow-lg transition-shadow hover:border hover:bg-gray-200 hover:scale-105 duration-300 text-5xl flex justify-center items-center">
+            card 5
+          </div>
+          {/* card end */}
+        </div>
       </div>
-      <h1 className="bg-blue-200">Vite + React</h1>
-      <h3>Dafi Hauzan A.H</h3>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
