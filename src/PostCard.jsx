@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from 'react'
 
 function PostCard(props) {
     const { title, body } = props;
@@ -6,7 +6,7 @@ function PostCard(props) {
 
     return (
         <div
-            className={`${clicked ? "bg-blue-100" : "bg-white"} p-6 rounded-lg shadow hover:shadow-md transition cursor-pointer`}
+            className={`${clicked ? "bg-blue-100" : "bg-white"} p-6 rounded-lg shadow hover:shadow-md transition-shadow`}
             onClick={() => setClicked(true)}
         >
             <h2 className="text-lg font-semibold text-gray-800 mb-2">{title}</h2>
